@@ -1,0 +1,575 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+    width: 100%;
+}
+/*  header */
+
+.zero{
+    background-image: url(./img/HeroImage.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 101px;
+    height: 35px;
+
+}
+
+header{
+    width: 100%;
+    display: flex;
+    font-weight: 600;
+    font-size: 18px;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 400;
+}
+
+.one ul {
+    display: flex;
+    width: 500px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+li{
+    list-style:none;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.one .button{
+    width: 40px;
+    height: 40px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 40px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+/* header ends here */
+
+/* first section */
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.textContainer h2{
+    color: rgba(232, 237, 242, 0.72);
+    text-align: center;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: "Bebas Neue";
+}
+
+.textContainer h1{
+    color: rgba(253, 253, 254, 0.98);
+    font-size: 250px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    font-family: "Bebas Neue";
+
+
+}
+
+.textContainer h3{
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Hanuman;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1;
+}
+
+/* second section */
+.second{
+    background-color: #D8E4E9;
+    padding: 50px 0;
+}
+.two{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center; 
+}
+
+.two .terkh{
+    background-image: url(./img/image\ 31.png);
+}
+
+.two .monastry{
+    background-image: url(./img/Untitled.png);
+}
+
+.two .khuvsgul{
+    background-image: url(./img/image\ 33.png);
+}
+
+.two .khorg{
+    background-image: url(./img/image\ 32.png);
+}
+
+
+.card{
+    position: relative;
+    width: 276px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* box-shadow: 10px 10px rgba(31, 114, 170, 0.46),
+                -10px -10px rgba(41, 114, 139, 0.25); */
+    margin: 20px;
+    box-shadow: -8px -8px 0px 0px rgba(31, 114, 170, 0.46), 
+    8px 8px 0px 0px rgba(41, 114, 139, 0.25);
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); 
+    transition: background-color 0.3s ease; 
+    z-index: 1;
+    border-radius: 40px;
+}
+
+.card:hover::before {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 40px;
+}
+ 
+
+.card .cardText{
+    position: absolute;
+    color: rgba(253, 253, 254, 0.80);
+    font-size: 37px;
+    font-weight: 400;
+    font-family: "Bebas Neue";
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 5px 5px 10px black ;
+    padding: 5px;
+    z-index: 2;
+ 
+}
+
+.card:hover .cardText {
+    color: white;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+     
+/* third section starts here */
+
+ .third{
+    background-image: url("./img/Map\ Image.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+
+.threeTitle{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.threeTitle h4{
+    font-size: 42px;
+    font-weight: 600;
+    color: #000;
+    font-family: Inter;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 10px 0;
+
+    
+}
+.threeTitle p{
+    font-size: 20px;
+    color: #18181B;
+    color: rgba(24, 24, 27, 0.70);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.three .mapSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.threeLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+}
+.three .map{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 40px;
+    
+
+}
+
+.three .map:hover{
+    border: 4px solid white;
+}
+
+.map .location{
+    display: flex;
+    flex-direction: column;
+}
+
+.map .dest{
+    color:#333;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.map .prov{
+    color: #555;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}
+.map .day{
+    font-size: 15px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    line-height: 50px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+.threeRight{
+    width:50%;
+    justify-content: center;
+    align-items: center ;
+}
+
+.threeLeft .day1{
+    background-color: #eee9d9de;
+}
+.threeLeft .day2{
+    background-color: #8bb8c1d6;
+
+}
+.threeLeft .day3{
+    background-color: #aad8d7d1;
+
+}
+.threeLeft .day4{
+    background-color: #8bc0bdce;
+
+}
+.threeLeft .day5{
+    background-color: #97cce0d0;
+
+}
+
+.locimg {
+    display: none;
+}
+
+.map:hover .locimg{
+    display: block;
+    background-size: cover;
+}
+
+/* third section ends here */
+
+/* Fourth section starts here */
+.fourth{
+    background: linear-gradient(0deg, #9FC6DE 0%, #D8E4E9 100%);
+    width: 100%;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+.four .fourTitle{
+    text-align: center;
+    padding: 20px 0;
+    color: rgba(24, 24, 27, 0.70);
+   
+}
+.fourTitle h4{
+    font-size: 42px;
+    font-weight: 600;
+    color: #000;
+    margin: 10px 0;
+}
+.fourTitle p{
+    font-size: 20px;
+    color: rgba(24, 24, 27, 0.70);
+    text-align: center;
+    font-weight: 500;
+}
+
+.priceCardHolder{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 0 20px; 
+    width: 1200px;
+    margin: auto;
+}
+
+.priceCard{
+    background-color: white;
+    width: 384px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.priceCard:hover{
+    box-shadow: -8px -8px 0px 0px rgba(31, 114, 170, 0.46), 
+    8px 8px 0px 0px rgba(41, 114, 139, 0.25);
+    transition: all 0.3s ease;
+}
+
+.priceCard .top{
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;      
+    padding: 10px 0; 
+    width: 70%;
+
+}
+.icon{
+    width: 35px;
+    height: 35px;
+    color: black;
+    border-radius: 50%;
+    border: 1px solid #919191;
+    display: flex;            
+    justify-content: center;  
+    align-items: center;     
+    font-size: 18px;          
+    line-height: 35px; 
+}
+
+.priceCard .topText{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.price h4{
+    color: #303030;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.price p{
+   
+    color: #919191;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+.price{
+    margin-bottom: 20px;
+}
+.checkList .includes {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: black;
+}
+
+.checkList .check {
+    margin-bottom: 10px;
+    vertical-align: middle;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+.package{
+    display: flex;
+    justify-content: space-between;
+}
+.checkList {
+    /* line-height: 1.8; */
+    padding: 15px;
+}
+.list{
+    display: flex;
+   
+    align-items: center;
+}
+.package .tag{
+    background-color: #6972B5;
+    width: 85px;
+    height: 28px;
+    color: white;
+    border-radius: 25px;
+    display: flex;            
+    justify-content: center;  
+    align-items: center;     
+    font-size: 16px;          
+    line-height: 40px; 
+}
+
+.check i {
+    margin-right: 10px; 
+    vertical-align: middle;
+}
+
+.selectButton {
+    background-color: #A4D1E2; 
+    font-size: 16px; 
+    padding: 12px 20px; 
+    border-radius: 30px; 
+    text-align: center;
+    border: none; 
+    font-weight: 500;
+}
+
+.priceCard:hover .selectButton {
+    background-color: rgba(24, 24, 27, 0.90);
+    color: white; 
+    transition: all 0.3s ease; 
+}
+/* Fourth section ends here */
+
+/* Footer stars here */
+.footer{
+    background-color: #9FC6DE;
+    width: 100%;
+    height: 30vh;
+    display: block;
+    
+}
+
+.footer_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.socialMedia{
+    display: flex;
+    
+}
+.fb{
+    background-image: url(./img/Facebook\ Icon.png);
+    width:20px;
+    height: 20px;
+    background-size: cover;
+}
+.ig{
+    background-image: url(./img/Instagram\ Icon.png);
+    width:20px;
+    height: 20px;
+    background-size: cover;
+}
+ .socialMedia p{
+    color: #6972B5 ;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+ }
+.social1, .social2{
+    background-color: white;
+    width: 150px;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+    padding:5px;
+}
+
+.footerLogo{
+    background-image: url(./img/tourLogo.png);
+    width: 150px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* Footer ends here */
+
+
+
